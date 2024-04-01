@@ -1,0 +1,255 @@
+<!doctype html> <!--Tag ini muncul di bagian paling atas dari setiap dokumen HTML dan memberitahu browser bahwa file adalah HTML 5-->
+<html>
+    <head> <!--Tag head berisi informasi tentang halaman itu sendiri. Termasuk judul halaman yg anda lihat di atas, berisikan file eksternal apa pun seperti CSS dan Javascript, dan informasi meta tambahan.-->
+        <title>materi day2</title>
+        <style>
+            table,th,td {
+                border: 1px solid black ;
+            }
+        </style> <!--command buat table ada garaisnya-->
+    </head>
+    <body> <!--Tag body adalah tempat konten utama yang akan anda lihat ditampilkan di layar anda berada. anda perlu meletakan apa pun yg anda inginkan untuk benar-benar dirender di antara tag body. Script juga dapat dimasukan ke dalam body-->
+        <h1 style="color: blue;"> Prolog </h1> 
+        <p>ini paragraf 1</p> <!--cara buat paragraf-->
+        <p>ini paragraf 2</p>
+
+        <hr> <!--cara buat garis horizontal-->
+        ini baris 1
+        <br> <!--break-->
+        ini baris 2
+
+        <!--cara buat komentar-->
+
+        <!--cara membuat judul di HTML-->
+        <h1>Heading1</h1>
+        <h2>Heading2</h2>
+        <h3>Heading3</h3>
+        <h4>Heading4</h4>
+        <h5>Heading5</h5>
+        <h6>Heading6</h6>
+
+        <!--HTML text formating-->
+        <hr>
+        <p><b>untuk cetak tebal</b></p>
+        <p><i>untuk cetak miring</i></p>
+        <p>ini untuk <sub>Subscript </sub>dan <sup>Superscript</sup></p>
+
+        <!--Unordered List-->
+        <hr>
+        <h1>Bahasa Pemograman untuk di pelajari</h1>
+        <ul>
+            <li>Javascript</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>Python</li>
+        </ul>
+        <!--type="disc"/"circle"/"square"/"none"-->
+
+        <!--Ordered List-->
+        <hr>
+        <h1>Bahasa Pemograman untuk di pelajari</h1>
+        <ol type="1">
+            <li>Javascript</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>Python</li>
+        </ol>
+        <!--List dalam list-->
+        <hr>
+        <h1>Buah Buahan</h1>
+        <ol type="1">
+            <li>jeruk</li>
+            <li>durian</li>
+            <li>pisang</li>
+            <ol type="i">
+                <li>pisang ambon</li>
+                <li>pisang raja</li>
+                <li>pisang keju</li>
+            </ol>
+            <li>Pepaya</li>
+        </ol>
+
+        <!--type="1"/"a"/"A"/"i"/"I"-->
+
+        <!--cara buat table di HTML-->
+        <hr>
+        <table>
+            <tr>
+                <th>nama</th>
+                <th>alamat</th>
+                <th>nomor telepon</th>
+            </tr>
+            <tr>
+                <th>opik</th>
+                <th>pocip</th>
+                <th>0813</th>
+            </tr>
+            <tr>
+                <th>riri</th>
+                <th>bintara</th>
+                <th>0812</th>
+            </tr>
+        </table>
+       
+        <!--Colum Span-->
+        <hr>
+        <table>
+            <tr>
+                <th>Asal</th>
+                <th>Domisili</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <center>Jakarta</center>
+                </td>
+            </tr>
+        </table>
+
+        <!--Row Span-->
+        <hr>
+        <table>
+            <tr>
+                <th rowspan="2">Jakarta</th>
+                <td>- A -</td>
+                <td>- B -</td>
+            </tr>
+            <tr>
+                <td>- C -</td>
+                <td>- D -</td>
+            </tr>
+        </table>
+
+        <!--cara menampilkan gambar-->
+        <hr>
+        <img src="C:\Users\danang\Pictures\Cheese Brulee  Boom (2).jpeg"
+        alt="ini gambar dari local"
+        width="200" height="200"/>
+        <br>
+        <img src="https://asset-a.grid.id/crop/52x77:808x465/700x465/photo/2021/06/17/brulee-bombjpg-20210617124818.jpg"
+        alt="ini gambar dari web"
+        width="200" height="200"/>
+
+        <!--Absolute Links dan Relative Links-->
+        <hr>
+        <p>
+            <a href="https://www.google.com/" target="_blank"> <!--target blank untuk buka new tab pada browser-->
+                google
+            </a>
+        </p>
+
+        <!--id links/cara navigasi di satu halaman yang sama-->    
+        <br>
+        <a href="#cari-aku"> cari aku</a>
+
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p id="cari-aku">aku</p>
+        <p>kau</p>
+        <p>kau</p>
+
+        <!--Forms-->
+        <hr>
+        <form action="" method="post">
+            <label for="nama">Nama</label>
+            <Input id="nama" type="text"></Input>
+            <br/>
+            <input type="password" required>
+            <br/>
+            <input type="checkbox">
+            <br/>
+            <input type="radio">
+            <br/>
+            <input type="number" min="1" max="10">
+            <br/>
+            <textarea rows="8" cols="64"> ketik di sini</textarea>
+            <br/>
+            <input type="submit" value="Ok">
+        </form>
+
+        <hr><!--select forms-->
+        <p>Apa warna favoritmu?</p>
+        <select>
+            <option>merah</option>
+            <option>kuning</option>
+            <option>hijau</option>
+            <option>biru</option>
+        </select>
+
+        <br><!--option grup-->
+        <p>Minuman Favoritmu?</p>
+        <select>
+            <optgroup label="Jus Buah">
+                <option>Jus Appel</option>
+                <option>Jus Jeruk</option>
+                <option>Jus mangga</option>
+            </optgroup>
+            <optgroup label="Jamu">
+                <option>Kencur</option>
+                <option>Asem</option>
+            </optgroup>
+        </select>
+
+        <hr><!--Radio Button, penggunaan di bawah dari 5 pilihan-->
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="Javascript">
+        <label for="javascript">Javascript</label><br>
+
+        <hr> <!--field Sets dan legends-->
+        <fieldset>
+            <legend>data diri</legend>
+
+            <p>
+                <label for="nama">Nama :</label>
+                <input type="text" name="nama">
+            </p>
+            <p>
+                <label for="usia">Usia :</label>
+                <input type="number" name="usia">
+            </p>
+        </fieldset>
+
+        <p>
+            <h2>HTMl Layout Elemet</h2>
+            HTML memiliki beberapa element semantic yang menentukan berbagai bagia halaman web :
+            <ul>
+                <li>header - mendefinisikan header untuk document atau section</li>
+                <li>nav - mendefinisikan satu set link navigasi</li>
+                <li>section - mendefinisikan bagian dalam dokumen</li>
+                <li>article - mendefinisikan suatu konten article</li>
+                <li>aside - mendefinisikan bagian samping dari conten (seperti sidebar) </li>
+                <li>footer - mendefinisikan footer / bagian bawah dari dokumen atau section </li>
+                <li>details - mendefinisikan detail tambahan yang dapat dibuka dan ditutup penggunaan sesuai perintah</li>
+                <li>summary - mendefinisikan heading untuk element</li>
+            </ul>
+
+            <h2>HTML semantic Elemets</h2>
+            <ol type="1">non semantic Elemets (menceritakan apa-apa tentang isinya)</ol>
+                <ul>
+                    <li>Div</li>
+                    <li>span</li>
+                </ul>
+                <br>
+            <ol type="1"> semantic Elemets (mendefinisikan isinya dengan jelas)</ol>
+                <ul>
+                    <li>form</li>
+                    <li>table</li>
+                    <li>article</li>
+                </ul>
+                <p>menuliskan element html dengan semantic yg tepat akan memudahkan proses development juga meningkatkan score SEO dan Accessebility web</p>
+
+
+        </p>
+    </body>
+</html>

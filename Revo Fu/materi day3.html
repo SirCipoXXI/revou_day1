@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>materi day3</title>
+
+        <link rel="stylesheet" href="materi day3.css"> <!--cara menggunakan CSS eksternal-->
+
+        <style>
+            .internal {
+                color: green;
+            }
+            .mobil{
+                color: blueviolet
+                ;
+            }
+            #avanza{
+                color: greenyellow;
+            }
+
+            a[target] {
+                background-color: yellow;
+            }
+
+            /* div{
+                width: 200px;
+                height: 200px;
+                background-color: lightblue;
+                margin-left: 50px;
+            }  */
+            .linear-gradient{
+                background: linear-gradient(blue,yellow);
+            }
+            .linear-gradient-derajat{
+                background: linear-gradient(90deg,blue,yellow);
+            }
+            .radial-gradient{
+                background: radial-gradient(blue,yellow);
+            }
+            .background-img{
+                background-color: lightgray;
+                background: url(https://wallpapercave.com/wp/wp9414308.png);
+                background-position: left top;
+                background-size: 1280px 720px ;
+            }
+
+            .font-family{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .font-style{
+                font-style: italic;
+            }
+            .text-transform{
+                text-transform: uppercase;
+            }
+            .text-decoration{
+                text-decoration: line-through;
+            }
+            .text-shadow{
+                text-shadow: -4px 4px 4px red;
+            }
+            .line-hight{
+                line-height: 50%;
+            }
+            .letter-spacing{
+                letter-spacing: 2px;
+            }
+            .word-spaciing{
+                word-spacing: 4px;
+            }
+            .text-aligment{
+                text-align: left;
+            }
+            .text-indent{
+                text-indent: 2rem;
+            }
+            .container{
+                height: 300px;
+                border: 5px solid #ffcc5c;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                
+            }
+            .container div{
+                padding: 10px;
+                text-align: center;
+                font-size: 14sp;
+                color: #ffeead;
+                border: 2px solid;
+                background-color: green;
+            }
+            .tanpa-padding{
+                padding: 0;
+            }
+            .pakai-padding{
+                padding: 25px;
+            }
+            .border{
+                color: white;
+                background-color: blue;
+                padding: 25px;
+                border: 20px ridge yellow;
+                border-radius: 10px;
+                box-shadow: -0.5rem 0.5rem 1rem gray;
+            }
+            .margin{
+                color: white;
+                background-color: blue;
+                padding: 25px;
+                border: 20px ridge yellow;
+            }
+            .wrapper{
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: 100px 100px 100px;
+                background-color: #fff;
+                color: #444;
+            }
+            .box{
+                background-color: #444;
+                color: #fff;
+                border-radius: 5px;
+                padding: 20px;
+                font-size: 150%;
+            }
+        </style><!--ID menggunakan # sedangkan CLASS menggunakan . -->
+    </head>
+    <body>
+        <h1>Cara menggunakan CSS di HTML</h1>
+        <ol type="1">
+            <li>Inline</li>
+                <ul>contoh :
+                    <h2 style="color: red;">Ini Warna Merah</h2>
+                </ul>
+            <li>Internal</li>
+                <ul>contoh :
+                    <h2 class="internal">Ini Warna Hijau</h2>
+                </ul>
+            <li>Eksternal</li> 
+                <ul>contoh :
+                    <p class="eksternal"> Ini Warna Biru</p>
+                </ul>
+        </ol>
+        <hr>
+
+        <h2>CSS Selector</h2> <!--ID di CSS akan lebih di pioritaskan styling nya, karena ID bersifat unik dan spesifik-->
+        <p>Warna-warna Mobil</p>
+        <p class="mobil" id="avanza">Warna Mobil Avanza</p>
+        <p class="mobil" id="ayla">Warna mobil Ayla</p>
+        <hr>
+
+        <h2>Attribute Selector</h2> <!--dimungkinkan untuk menata HTML yang memiliki atribute atau nilai atribute tertentu-->
+        <a href="https://www.w3schools.com/"> www.w3schools.com </a><br>
+        <a href="https://developer.mozilla.org/en-US/" target="_blank"> www.developer.mozilla.org </a><br>
+        <a href="https://css-tricks.com/" target="_top"> www.css-tricks.com </a>
+
+        <h2>Beberapa cara atau metode untuk set color di CSS</h2>
+        <ol type="1">
+            <li>RGB atau red,green,blue color value
+                <p>Contoh : "color: RGB(0,0,225)"</p>
+            </li>
+            <li>Hexadecimal value
+                <p>Contoh : "color: #00FF00"</p>
+            </li>
+            <li>Hue, Saturation, Lightness value
+                <p>Contoh : "color: hsl(360,100%,75%)"</p>
+            </li>
+            <li>Alpha Transparency
+                <p>Contoh : "color: RGB(0,0,225,0.782)"</p>
+                <p>Contoh : "color: hsl(360,100%,75%,0.5)"</p>
+            </li>
+        </ol>
+        <hr>
+
+        <h2>beberapa cara / metode untuk set background color di CSS</h2>
+        <div class="background-color"></div>
+        <div class="linear-gradient"></div>
+        <div class="linear-gradient-derajat"></div>
+        <div class="radial-gradient"></div>
+        <hr>
+
+        <h2>background Image</h2>
+        <div class="background-img"></div>
+        <hr>
+
+        <h2>Font dan Text</h2>
+        <p>
+            Contoh Font :
+            <ul>
+                <li class="font-family">Family</li>
+                <li class="font-style">style : normal, italic, oblique</li>
+                <li class="text-transform">transform : capitalize, uppercase, lowercase, none</li>
+                <li class="text-decoration">decoration : underline, overline, line-through, wavy, none</li>
+                <li class="text-shadow">shadow</li>
+                <li class="line-hight">line-hight</li>
+                <li class="letter-spacing">letter-spacing</li>
+                <li class="word-spaciing">word-spaciing</li>
+                <li class="text-aligment">text-aligment : left, center, right</li>
+                <li class="text-indent">text-indent</li>
+            </ul>
+        </p>
+        <hr>
+
+        <h2>Display</h2>
+        <p>Properti tampilan CSS yang mengatur apakah suatu element diperlukan sebagai block atau inline element dan tata letak yang digunakan untuk turunannya, seperti flow layout, grid, atau flex</p>
+        <ul>
+            <li>Inline : menampilkan element sebagai elemen inline (seperti "span"). properti height dan width apapun tidak akan berpengaruh</li>
+            <li>Block : menampilkan element sebagai elemen block (seperti "p"). itu dimulai pada baris baru, dan menempati seluruh lebar</li>
+            <li>Flex : menampilkan element sebagai container yang flexibel</li>
+            <ul>
+                Contoh flex :
+                <nav class="container">
+                    <div class="home">Home</div>
+                    <div class="search">Search</div>
+                    <div class="logout">Logout</div>
+                </nav>
+            </ul>
+            <li>grid : menampilkan element sebagai grid container</li>
+        </ul>
+        <h2>Width dan Hight, digunakan untuk mengatur lebar dan tinggi dari suatu element</h2>
+        <br>
+        <h2>Padding, Border, dan Margin (CCS Box Model)</h2>
+        <ul>
+            <li>Padding : digunakan untuk mengatur jarak antara border dan conten. Area padding juga termasuk area yg di warnai oleh background color</li>
+            <P>Contoh : </P>
+            <div class="tanpa-padding">Tanpa Padding</div>
+            <br>
+            <div class="pakai-padding">Pakai Padding</div>
+            <li>Border : digunakan untuk menentukan style, lebar, dan warna border element</li>
+            <p>Solid, dotted, dashed, double, inset, outset, groove, ridge</p>
+            <p>Contoh :</p>
+            <div><h1 class="border">Contoh border</h1></div>
+            <li>Margin : digunakan untuk mengatur jarak di bagian luar border</li>
+            <p>margin-top, margin-bottom, margin-right</p>
+            <p>Contoh :</p>
+            <div><h1 class="margin">contoh margin</h1></div>
+        </ul>
+        <hr>
+
+        <h2>Cara alternatif untuk layouting: CSS grid</h2>
+        <ul>
+            <li>Mirip dengan Flex dan Table, Grid adalah salah satu metode untuk layouting atau mengatur susunan</li>
+            <li>Perbedaan dengan flex adalah, flex sifatnya one dimensional, sedangkan grid dapat untuk membuat layout 2 dimensi </li>
+        </ul>
+        <br>
+        <div class="wrapper">
+            <div class="box">A</div>
+            <div class="box">B</div>
+            <div class="box">C</div>
+            <div class="box">D</div>
+            <div class="box">E</div>
+            <div class="box">F</div>
+        </div>
+    </body>
+</html>
